@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werkstatt Auftrag</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+     <!--<form action="/submit-form" method="POST">-->
+        <h1>Werkstatt Auftrag</h1>
+        <form>
+            <table class="a-r-table">
+                <tr>
+                    <td><label for="a">A:</label><input type="text" id="a" name="a" required></td>
+                    <td><label for="r">R:</label><input type="text" id="r" name="r" required></td>
+                </tr>
+            </table>
+        
+        <div class="form-row">
+            <laben for="date">Datum:</label>
+            <input type="date" id="date" name="date" required><br><br>
+        </div>
+
+        <div class="form-container2">
+            <table class="input-table1">
+                <tr>
+                    <td><label for="kunde">Kunde:</label><input type="text" id="kunde" name="kunde" class="input-field2" required></td>
+                    <td><label for="pickerl_ablauf">Pickerl ablauf:</label><input type="text" id="pickerl_ablauf" name="pickerl_ablauf" class="input-field2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="fahrzeug">Fahrzeug:</label><input type="text" id="fahrzeug" name="fahrzeug" class="input-field2" required></td>
+                    <td><label for="serviceheft">Serviceheft:</label><input type="text" id="serviceheft" name="serviceheft" class="input-field2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="kennzeichen">Kennzeichen:</label><input type="text" id="kennzeichen" name="kennzeichen" class="input-field2" required></td>
+                    <td><label for="reifenlager_ort">Reifenlager Ort:</label><input type="text" id="reifenlager_ort" name="reifenlager_ort" class="input-field2" required></td>
+                </tr>
+                <tr>
+                    <td><label for="km">Km:</label><input type="text" id="km" name="km" class="input-field2" required></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        
+
+        <h3>Arbeitspositionen:</h3>
+  
+        <table class="checkbox-table">
+            <tr>
+                <td><label><input type="checkbox" name="pickerl">Pickerl:</label></td>
+                <td><label><input type="checkbox" name="oilChange">ÖL Wechsel:</label></td>
+                <td><label><input type="checkbox" name="grosse_service">Großes Service:</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" name="long_live_service">Long Live Service:</label></td>
+                <td><label> <input type="checkbox" name="getriebe_oil">Getriebe Öl:</label></td>
+                <td><label><input type="checkbox" name="zahnriemen">Zahnriemen:</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" name="wasserpumpe">Wasserpumpe:</label></td>
+                <td><label><input type="checkbox" name="v_riemen">V-Riemen:</label></td>
+                <td><label><input type="checkbox" name="keilriemen">Keilriemen:</label></td>
+            </tr> 
+            <tr>
+                <td><label><input type="checkbox" name="beleuchtung">Beleuchtung:</label></td>
+                <td><label><input type="checkbox" name="bremse_v+h">Bremse v+h:</label></td>
+                <td><label><input type="checkbox" name="bremschscheibe_v+h">Bremschscheibe v+h:</label></td>
+            </tr> 
+            <tr>
+                <td><label><input type="checkbox" name="bremsfluessigkeit">Bremsflüssigkeit:</label></td>
+                <td><label><input type="checkbox" name="bremsschleauche">Bremsschläuche:</label></td>
+                <td><label><input type="checkbox" name="klima_service">Klima Service:</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" name="reifen_umstecken">Reifen umstecken:</label></td>
+                <td><label><input type="checkbox" name="reifen_neu">Reifen neu:</label></td>
+                <td><label><input type="checkbox" name="reifen_lagern">Reifen lagern:</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" name="reifen_ins_auto">Reifen ins Auto:</label></td>   
+                <td><label><input type="checkbox" name="achsvermessung">Achsvermessung:</label></td>
+                <td><label><input type="checkbox" name="fehlerspeicher+bericht">Fehlerspeicher + Bericht:</label></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox" name="wischerbl'tter_v+h">Wischerblätter v+h:</label></td>
+                <td colspan="2">
+                    <table class="bremswerte">
+                        <tr>
+                            <td><label for="kn1">kn</label><input type="text" id="kn1" name="kn1" class="small-input1" required></td>
+                            <td><label for="kn2">kn</label><input type="text" id="kn2" name="kn2" class="small-input1" required></td>
+                            <td><label for="kn3">kn</label><input type="text" id="kn3" name="kn3" class="small-input1" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="kn4">kn</label><input type="text" id="kn4" name="kn4" class="small-input1" required></td>
+                            <td><label for="kn5">kn</label><input type="text" id="kn5" name="kn5" class="small-input1" required></td>
+                            <td><label for="kn6">kn</label><input type="text" id="kn6" name="kn6" class="small-input1" required></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <table class="reifen-table">
+                        <tr>
+                            <td><label for="reifen1">Reifen:</label></td>
+                            <td><input type="text" id="reifen1" name="reifen1" class="small-input1"> mm</td>
+                            <td><input type="text" id="reifen2" name="reifen2" class="small-input1"> mm</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="text" id="reifen3" name="reifen3" class="small-input1"> mm</td>
+                            <td><input type="text" id="reifen4" name="reifen4" class="small-input1"> mm</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+                
+        <div class="form-container1">
+            <div class="line"></div> <!-- Верхня лінія -->
+            <table class="input-table full-width-table">
+                <tr>
+                    <td><label for="bremsfluessigkeit">Bremsflüssigkeit:</label><input type="text" id="bremsfluessigkeit" name="bremsfluessigkeit" class="small-input"> °C</td>
+                    <td><label for="frostschutz">Frostschutz:</label><input type="text" id="frostschutz" name="frostschutz" class="small-input"> °C</td>
+                </tr>
+            </table>
+            <div class="line"></div> <!-- Нижня лінія -->
+        </div>
+        
+        
+        
+
+
+    <label for="detail_material">Teilenummer/Material:</label>
+    <textarea id="detail_material" name="detail_material" rows="2"></textarea><br><br>
+
+    <label for="other_work">Sonstige Arbeiten:</label>
+    <textarea id="other_work" name="other_work" rows="4"></textarea><br><br>
+
+    <label for="remark">Bemerkung:</label>
+    <textarea id="remark" name="remark" rows="2"></textarea><br><br>
+
+        <button type="submit">Senden</button>
+     </form>
+    </div>
+</body>
+</html>
